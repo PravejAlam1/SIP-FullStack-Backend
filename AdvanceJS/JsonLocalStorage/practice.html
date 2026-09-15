@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #my-button {
+      height: 50px;
+      width: 50px;
+      font-size: 25;
+    }
+  </style>
+</head>
+<body>
+  
+<h2 id="greating"></h2>
+
+<button id="my-button" onclick="buttonPassed();">0</button>
+  <script>
+
+    let noOfTimeClicked = 0;
+    function buttonPassed() {
+      let button = document.querySelector('#my-button');
+      noOfTimeClicked++;
+      button.innerText= noOfTimeClicked;
+    }
+
+
+    //===Display good morning, afternoon and night based on current hour
+    // function doGreating(personName ='Dear') {//1
+
+
+
+
+
+
+
+    function doGreating(personName= 'Dear') {
+      let date = new Date();
+      let hour = 10;
+      let heading = document.querySelector('#greating');
+
+      if(hour > 5 && hour <12) {
+        heading.innerText = `Good Morning ${personName}`;
+
+      }else if (hour > 12 && hour < 18){
+        heading.innerText = `Good Afternoon ${personName}`;
+
+      } else {
+        heading.innerText = `Good Night ${personName}`;
+
+      }
+
+    }
+  // doGreating()//====1
+  doGreating('Pravej');
+
+</script>
+</body>
+</html>
