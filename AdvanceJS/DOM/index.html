@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    /* .red{
+      color: red;
+    } */
+
+    .box {
+      border: 6px solid black;
+
+      background:pink;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  
+
+
+  <script>
+    // let para1 = document.createElement("p");
+    // para1.innerText = "Hey I'm red!";
+
+    // document.querySelector("body").append(para1);
+
+    // para1.classList.add("red");
+
+    //q2
+
+    let div = document.createElement("div")
+    let h1 = document.createElement("h1")
+    let para = document.createElement("p")
+
+    h1.innerText= "I am inside the div";
+    para.innerText= "me too!";
+
+    div.append("h1");
+    div.append("para")
+
+    div.classList.add("box")
+
+    document.querySelector("body").append(div);
+
+  </script>
+</body>
+</html>
