@@ -57,7 +57,7 @@ async function getImage() {
   return res.data.message;
 
   } catch(err) {
-    console.log("Code Error: ", err)
+    console.log("Code Error -", err)
     return "/";
   } 
 }
